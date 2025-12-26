@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year 2026 | Explore Wishes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #161b33;
+            --card-bg: #1f2544;
+            --cyan: #00d2ff;
+            --yellow: #ffce00;
+            --pink: #ff005c;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Hero Banner with Fireworks */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(22, 27, 51, 0.7), rgba(22, 27, 51, 0.9)), 
+                        url('https://images.unsplash.com/photo-1533230393619-3c4731362e81?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 5rem;
+            color: var(--yellow);
+            margin: 0;
+            text-shadow: 0 0 15px rgba(255, 206, 0, 0.4);
+        }
+
+        /* Explore Wishes Section */
+        .explore-section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 50px;
+            letter-spacing: -1px;
+        }
+
+        .wish-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        /* Interactive Navigation Cards */
+        .wish-card {
+            background: var(--card-bg);
+            padding: 50px 35px;
+            border-radius: 20px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: block;
+            border-left: 8px solid transparent;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .wish-card:hover {
+            transform: translateY(-12px);
+            background: #282f54;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+
+        /* Relationship Colors from Screenshot */
+        .card-family { border-left-color: var(--cyan); }
+        .card-family h3 { color: var(--cyan); }
+
+        .card-friends { border-left-color: var(--yellow); }
+        .card-friends h3 { color: var(--yellow); }
+
+        .card-inspirational { border-left-color: var(--pink); }
+        .card-inspirational h3 { color: var(--pink); }
+
+        .wish-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .wish-card p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 3.5rem; }
+            .section-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Happy New Year 2026</h1>
+        <p>A fresh start, a new chapter, and beautiful wishes for everyone.</p>
+    </header>
+
+    <section class="explore-section">
+        <h2 class="section-title">Explore Wishes</h2>
+        <div class="wish-grid">
+            
+            <a href="family.html" class="wish-card card-family">
+                <h3>For Family</h3>
+                <p>Heartfelt messages for your loved ones to start the year with warmth and gratitude.</p>
+            </a>
+
+            <a href="friends.html" class="wish-card card-friends">
+                <h3>For Friends</h3>
+                <p>Cheers to good times, new memories, and the friendship that makes life beautiful!</p>
+            </a>
+
+            <a href="inspirational.html" class="wish-card card-inspirational">
+                <h3>Inspirational</h3>
+                <p>Motivational quotes and messages to fuel your ambitions for the year ahead.</p>
+            </a>
+
+        </div>
+    </section>
+
+</body>
+</html>
